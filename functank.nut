@@ -3,7 +3,7 @@
 //
 // how to use it? 2 entities.
 // 1. Main entity: func_brush, func_physbox, or similar
-// 2. logic_timer Entity: Set refire every 0.1 seconds. !self -> RunScriptCode -> funcTank_LockToPlayer()
+// 2. logic_timer Entity: Set refire every 0.1 seconds. YourEntity -> RunScriptCode -> funcTank_LockToPlayer()
 
 iRandomPlayer    <- null;
 pEntityOrigin    <- null;
@@ -64,4 +64,5 @@ function OnPostSpawn()
 {
     pEntityOrigin = self.GetOrigin();
     iEntity = self;
+
 }
