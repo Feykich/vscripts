@@ -5,7 +5,7 @@ function ScaleHP(AddScale) // entity output
 	local Scale 	= GetPlayerCount();
 	local newScale 	= g_Scale + (Scale * AddScale);
 	
-	EntFireByHandle(self, "Add", newScale.tostring(), 0.5, null, null);
+	EntFireByHandle(self, "Add", newScale.tostring(), 0.5, null, null); // math_counter
 	
 	printl("Scaled to: " + newScale);
 }
@@ -23,4 +23,5 @@ function GetPlayerCount()
 		}
 	}
 	return count;
+
 }
