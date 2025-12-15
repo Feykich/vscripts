@@ -1,7 +1,4 @@
 // Testing purposes
-
-iEntCount <- null;
-
 function EntCounter(iEntCount)
 {
 	for(local i = 1; i <= iEntCount; i++)
@@ -15,4 +12,5 @@ function EntCounter(iEntCount)
 		printl("Counted: entity_maker_spikes_" + i);
 		printl(SaveOrigin);
 	}
+
 }
